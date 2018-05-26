@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+var sec = 3601112;
+console.log(getTime(sec));
+function getTime() {
+
+    hour = parseInt(sec/3600);
+    min = parseInt(hour / 60);
+    sec = parseInt(min % 60);
+	
+	var res = hour+"hour: "+min+"minutes:"+sec+"seconds"
+    return res;
+}
+</script>
+</body>
+</html>
